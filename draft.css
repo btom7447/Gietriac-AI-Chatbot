@@ -1,0 +1,98 @@
+header {
+    z-index: 10;
+    top: 20px ;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 1234px;
+    background-color: #F7F4F2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.headerIcons {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.headerIcon {
+    display: flex;
+    width: 64px;
+    height: 64px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1000px;
+    background-color: #FFF;
+}
+.logoDiv {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 5rem;
+    height: 5rem;
+}
+.navLinks li a {
+    position: relative;
+    text-decoration: none;
+    margin-right: 2rem;
+    color: #4B3425;
+    font-family: Urbanist;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.36px;
+    padding-bottom: 5px;
+    transition: color 0.3s, padding-bottom 0.3s;
+}
+.navDropdown li {
+    color: #E8DDD9;
+}
+/* DROPDOWN */
+.navDropdown{
+    display: inline-block;
+    position: relative;
+}
+.dropdownOptions{
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    overflow: auto;
+    padding: 1rem;
+    width: 15rem;
+    margin: 0px 0 0 -5rem;
+    background-color:#4b3425df;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.dropdownOptions a{
+    padding: 10px;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 1rem;
+    display: inline-block;
+    border-bottom: solid 0.5px #ffffff2a;
+    color: #E8DDD9;
+    font-family: Urbanist;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.36px;
+    text-align: center;
+}
+.navDropdown:hover .dropdownOptions {
+    opacity: 1;
+    transform: translateY(0px);
+    display: flex; 
+        
+}
