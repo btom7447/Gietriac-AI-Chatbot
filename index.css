@@ -4,6 +4,9 @@
     padding: 0;
     scroll-behavior: smooth;
 }
+.psyche {
+    border-radius: 1000px;
+}
 .hoverButton {
     /* background: #a370f0; */
     color: #4B3425;
