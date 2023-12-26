@@ -1,98 +1,193 @@
-header {
-    z-index: 10;
-    top: 20px ;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    padding: 0.5rem;
-    border-radius: 1234px;
-    background-color: #F7F4F2;
+/* ASSESSMENT */
+.assessment {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 5rem;
+    padding: 0px 135px;
+    align-items: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
 }
-.headerIcons {
-    display: inline-flex;
+.assessmentContainer {
+    margin: auto;
+    display: flex;
+    width: 1170px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.assessment .right {
+    flex-direction: row;
+}
+.assessment .left {
+    flex-direction: row-reverse;
+}
+.assessmentContainer .poster{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+}
+.assessmentContainer .poster .firstDiv {
+    background-color: #E8DDD9;
+    width: fit-content;
+    height: fit-content;
+    padding: 0px 7px;
+    display: flex;
+    align-items: center;
+    border-radius: 1234px;
+}
+.assessmentContainer .poster .firstDiv p {
+    color: #4B3425;
+    font-family: Urbanist;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+.assessmentContainer .poster h1 {
+    align-self: stretch;
+    color:  #4B3425;
+    font-family: Urbanist;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -1.44px;
+    margin-bottom: -10px;
+}
+.assessmentContainer .poster p {
+    align-self: stretch;
+    color: rgba(31, 22, 15, 0.64);
+    font-family: Urbanist;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; 
+    letter-spacing: -0.2px;
+}
+.assessmentContainer .poster .numbers {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 64px;
+    align-self: stretch;
+}
+.numbers div {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
     align-items: flex-start;
     gap: 8px;
 }
-.headerIcon {
-    display: flex;
-    width: 64px;
-    height: 64px;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1000px;
-    background-color: #FFF;
-}
-.logoDiv {
-    height: fit-content;
-    display: flex;
-    align-items: center;
-}
-.logo {
-    width: 5rem;
-    height: 5rem;
-}
-.navLinks li a {
-    position: relative;
-    text-decoration: none;
-    margin-right: 2rem;
+.numbers div h5 {
     color: #4B3425;
     font-family: Urbanist;
-    font-size: 18px;
+    font-size: 35px;
     font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.36px;
-    padding-bottom: 5px;
-    transition: color 0.3s, padding-bottom 0.3s;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -1.44px;
+    margin-bottom: -10px;
+    margin-top: -10px;
 }
-.navDropdown li {
-    color: #E8DDD9;
+.numbers div h5 span {
+    color: #926247;
 }
-/* DROPDOWN */
-.navDropdown{
-    display: inline-block;
-    position: relative;
-}
-.dropdownOptions{
-    /* display: flex; */
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    overflow: auto;
-    padding: 1rem;
-    width: 15rem;
-    margin: 0px 0 0 -5rem;
-    background-color:#4b3425df;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    opacity: 0;
-    transform: translateY(20px); 
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-.dropdownOptions a{
-    padding: 10px;
-    text-decoration: none;
-    width: 100%;
-    margin-bottom: 1rem;
-    display: inline-block;
-    border-bottom: solid 0.5px #ffffff2a;
-    color: #E8DDD9;
+.poster .numbers div p {
+    color: rgba(31, 22, 15, 0.64);
     font-family: Urbanist;
-    font-size: 18px;
+    font-size: 10px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 800;
     line-height: normal;
-    letter-spacing: -0.36px;
-    text-align: center;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
 }
-.navDropdown:hover .dropdownOptions {
-    opacity: 1;
-    transform: translateY(0px);
-    display: flex; 
-        
+.imagePoster {
+   width: fit-content;
+   height: fit-content;
+}
+.imagePoster .background {
+    width: 400px;
+    height: 400px;
+    flex-shrink: 0;
+    border-radius: 1000px;
+    background-color:  #4B3425;
+    position: relative;
+    z-index: 2;
+}
+.imagePoster img {
+    width: 250px;
+    height: auto;
+    border-radius: 32px;
+    position: relative;
+    z-index: 3;
+    margin: -450px 0 0 80px;
+}
+.checks div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: -10px;
+    margin-bottom: -20px;
+}
+.poster .checks div p {
+    color: #4B3425;
+    font-family: Urbanist;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+.progress {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.progress h1 {
+    color:  #4B3425;
+    font-family: Urbanist;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px; 
+    letter-spacing: -1.44px;
+    margin-top: -10px;
+}
+.progress h1 span {
+    color: #926247;
+}
+.poster .progress p {
+    color:  rgba(31, 22, 15, 0.64);
+    font-family: Urbanist;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+.progress .bar {
+    margin-top: 10px;
+    width: 288px;
+    height: 4px;
+    flex-shrink: 0;
+    stroke-width: 8px;
+    background-color:  #E8DDD9;
+    position: relative;
+    z-index: 1;
+}
+.progress .progressBar {
+    width: 260px;
+    height: 5px;
+    background-color: #4B3425;
+    position: relative;
+    z-index: 2;
+    margin-top: -5px;
 }

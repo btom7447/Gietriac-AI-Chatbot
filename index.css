@@ -535,37 +535,25 @@ header {
    font-size: 14px;
 }
 
-/* ASSESSMENT */
+/* ASSESSMENT SECTION */
 .assessment {
+    padding: 100px 40px;
+    width: 100%;
     display: flex;
-    padding: 0px 135px;
-    align-items: flex-start;
-    gap: 10px;
     flex-wrap: wrap;
-}
-.assessmentContainer {
-    margin: auto;
-    display: flex;
-    width: 1170px;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 60px;
 }
-.assessment .right {
-    flex-direction: row;
-}
-.assessment .left {
-    flex-direction: row-reverse;
-}
-.assessmentContainer .poster{
+.assessment .poster{
     display: flex;
-    width: 40%;
+    width: 45%;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: 100px;
     flex-shrink: 0;
+    margin-bottom: 100px;
 }
-.assessmentContainer .poster .firstDiv {
+.assessment .poster .firstDiv {
     background-color: #E8DDD9;
     width: fit-content;
     height: fit-content;
@@ -574,7 +562,7 @@ header {
     align-items: center;
     border-radius: 1234px;
 }
-.assessmentContainer .poster .firstDiv p {
+.assessment .poster .firstDiv p {
     color: #4B3425;
     font-family: Urbanist;
     font-size: 10px;
@@ -585,7 +573,7 @@ header {
     text-transform: uppercase;
     margin-left: 10px;
 }
-.assessmentContainer .poster h1 {
+.assessment .poster>h1 {
     align-self: stretch;
     color:  #4B3425;
     font-family: Urbanist;
@@ -594,9 +582,9 @@ header {
     font-weight: 700;
     line-height: 56px;
     letter-spacing: -1.44px;
-    margin-bottom: -10px;
+    margin: -50px 0 -20px 0
 }
-.assessmentContainer .poster p {
+.assessment .poster>p {
     align-self: stretch;
     color: rgba(31, 22, 15, 0.64);
     font-family: Urbanist;
@@ -605,25 +593,26 @@ header {
     font-weight: 500;
     line-height: 160%; 
     letter-spacing: -0.2px;
+    margin: -50px 0 -20px 0;
 }
-.assessmentContainer .poster .numbers {
+.assessment .poster .numbers {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     gap: 64px;
     align-self: stretch;
 }
-.numbers div {
+.poster .numbers div {
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
 }
-.numbers div h5 {
+.poster .numbers div h5 {
     color: #4B3425;
     font-family: Urbanist;
-    font-size: 35px;
+    font-size: 50px;
     font-style: normal;
     font-weight: 700;
     line-height: 56px;
@@ -631,7 +620,7 @@ header {
     margin-bottom: -10px;
     margin-top: -10px;
 }
-.numbers div h5 span {
+.poster .numbers div h5 span {
     color: #926247;
 }
 .poster .numbers div p {
@@ -644,32 +633,11 @@ header {
     letter-spacing: 1.4px;
     text-transform: uppercase;
 }
-.imagePoster {
-   width: fit-content;
-   height: fit-content;
-}
-.imagePoster .background {
-    width: 400px;
-    height: 400px;
-    flex-shrink: 0;
-    border-radius: 1000px;
-    background-color:  #4B3425;
-    position: relative;
-    z-index: 2;
-}
-.imagePoster img {
-    width: 250px;
-    height: auto;
-    border-radius: 32px;
-    position: relative;
-    z-index: 3;
-    margin: -450px 0 0 80px;
-}
-.checks div {
+.poster .checks div {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-top: -10px;
+    margin-top: -20px;
     margin-bottom: -20px;
 }
 .poster .checks div p {
@@ -682,12 +650,12 @@ header {
     letter-spacing: 1.4px;
     text-transform: uppercase;
 }
-.progress {
+.poster .progress {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-.progress h1 {
+.poster .progress h1 {
     color:  #4B3425;
     font-family: Urbanist;
     font-size: 48px;
@@ -697,7 +665,7 @@ header {
     letter-spacing: -1.44px;
     margin-top: -10px;
 }
-.progress h1 span {
+.poster .progress h1 span {
     color: #926247;
 }
 .poster .progress p {
@@ -710,7 +678,7 @@ header {
     letter-spacing: 1.4px;
     text-transform: uppercase;
 }
-.progress .bar {
+.poster .progress .bar {
     margin-top: 10px;
     width: 288px;
     height: 4px;
@@ -720,13 +688,42 @@ header {
     position: relative;
     z-index: 1;
 }
-.progress .progressBar {
+.poster .progress .progressBar {
     width: 260px;
     height: 5px;
     background-color: #4B3425;
     position: relative;
     z-index: 2;
     margin-top: -5px;
+}
+
+.imagePoster {
+    position: relative;
+    width: 30%; 
+    height: 100%; 
+    margin-bottom: 100px;
+}
+.imagePosterBackground {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; 
+    height: 450px; 
+    background-color: #4B3425; 
+    border-radius: 50%;
+    z-index: 1;
+}
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 250px;
+    height: 550px;
+    z-index: 2;
 }
 
 /* HEALTH JOURNEY */
@@ -1073,9 +1070,6 @@ header {
     background-color: #FFF;
 }
 
-*{
-    /* outline: red solid 1px; */
-}
 /* FOOTER */
 footer {
     display: flex;
@@ -1329,18 +1323,13 @@ footer .copyRights p {
     }
     .features .learnButton {
         width: 100%; 
-     }
-    /* ASSESSMENT */
+    }
+
+    /* ASSESSMENT SECTION */
     .assessment {
-        display: flex;
-        flex-direction: column;
-        padding: 0px 20px;
-        align-items: flex-start;
-        justify-content: center;
-        gap: 10px;
-        flex-wrap: wrap;
         display: none;
     }
+
     /* HEALTH JOURNEY */
     .healthJourney {
         border-radius: 56px;
@@ -1381,6 +1370,7 @@ footer .copyRights p {
         width: 800px;
         height: auto;
     }
+    
     /* BLOG SECTION */
     .blog {
         padding: 50px 20px;
@@ -1461,9 +1451,7 @@ footer .copyRights p {
         font-size: 40px;
         text-align: center;
     }
-    *{
-        /* outline: red solid 1px; */
-    }
+  
     /* FOOTER */
     footer {
         display: flex;
@@ -1498,15 +1486,6 @@ footer .copyRights p {
         margin-top: 10rem;
         margin-bottom: 3rem;
         width: 100%;
-        height: fit-content;
-        padding: 0;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: space-around;
-        position: relative;
-        z-index: 1;
     }
     .heroCaption {
         background-color: transparent;
@@ -1515,7 +1494,7 @@ footer .copyRights p {
         padding: 1rem;
     }
     .heroCaption h1 {
-        font-size: 65px;
+        font-size: 50px;
     }
     .heroButtons {
         flex-direction: column;
@@ -1529,7 +1508,7 @@ footer .copyRights p {
         width: 100%;
     }
     .background img {
-    transform: translate(-10%, -15%);
+        transform: translate(-8%, -15%);
     }
     .background {
         width: 50%;
@@ -1575,44 +1554,22 @@ footer .copyRights p {
     .featuresGallery .features {
         width: 45%;
     }
-    /* ASSESSMENT */
+
+    /* ASSESSMENT SECTION */
     .assessment {
-        display: flex;
-        padding: 0px 30px;
-        align-items: flex-start;
-        gap: 10px;
-        flex-wrap: wrap;
+        padding: 50px 10px;
     }
-    .assessmentContainer {
-        width: 100%;
-        margin-bottom: 40px;
+    .assessment .poster{
+        width: 40%;
     }
-    .assessment .right {
-        flex-direction: row;
-    }
-    .assessment .left {
-        flex-direction: row-reverse;
-    }
-    .assessmentContainer .poster{
-        display: flex;
-        width: 60%;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        flex-shrink: 0;
-    }
+
     .imagePoster {
-        width: fit-content;
-        height: fit-content;
+        width: 50%; 
     }
-    .imagePoster .background {
-        width: 300px;
-        height: 300px;
+    .imagePosterBackground {
+        height: 400px; 
     }
-    .imagePoster img {
-        width: 250px;
-        margin: -380px 0 0 20px;
-    }
+
     /* HEALTH JOURNEY */
     .healthJourney {
         padding: 40px 20px;
@@ -1659,5 +1616,22 @@ footer .copyRights p {
         flex-shrink: 0;
         border-radius: 32px;
         background-color:  #F7F4F2;
+    }
+    /* REVIEWS SECTION */
+    .reviews {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 50px;
+    }
+    .reviewText {
+        width: 80%;
+    }
+    .reviewCaption {
+        width: 80%;
+        display: flex;
+        align-items: center;
+    }
+    .reviewCaption p {
+        text-align: center;
     }
 }
