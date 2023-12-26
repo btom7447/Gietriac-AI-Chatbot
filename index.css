@@ -300,9 +300,10 @@ header {
     margin-right: 10px; 
     margin-top: 20px;
 }
-.splide__slide.splide__slide--active {
-    background-color: #FFF; 
+#splide .splide__slide.is-active svg {
+    fill: #FFF;  
 }
+
 /* STATISTICS */
 .statistics {
     margin: auto;
@@ -1227,7 +1228,8 @@ footer .copyRights p {
         width: 10px;
         display: inline-block;
         margin-right: 10px; 
-        margin-top: -8px;
+        margin-top: 0px;
+        margin-left: 80px;
     }
     /* STATISTICS */
     .statistics {
@@ -1370,7 +1372,7 @@ footer .copyRights p {
         width: 800px;
         height: auto;
     }
-    
+
     /* BLOG SECTION */
     .blog {
         padding: 50px 20px;

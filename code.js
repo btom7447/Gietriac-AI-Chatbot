@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
         arrows: false,   
         pagination: false, 
         cover: true,        
-        focus: 'center',   
+        focus: 'center', 
         isNavigation: false,  
         pauseOnHover: true,
     }).mount();
