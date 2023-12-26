@@ -28,7 +28,6 @@
     padding: 15px;
     border-radius: 1000px;
 }
-  
 .hoverButton .buttonIcon {
     background: white;
     margin-left: 1em;
@@ -62,11 +61,11 @@ header {
     left: 0;
     position: absolute;
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 1234px;
     background-color: #F7F4F2;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 5rem;
 }
@@ -299,6 +298,7 @@ header {
     width: 250px;
     display: inline-block;
     margin-right: 10px; 
+    margin-top: 20px;
 }
 .splide__slide.splide__slide--active {
     background-color: #FFF; 
@@ -484,10 +484,12 @@ header {
 }
 .appFeatures .featuresGallery {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     width: 100%;
     height: fit-content;
     gap: 16px;
+    margin: auto;
 }
 .featuresGallery .features {
     display: flex;
@@ -885,6 +887,195 @@ header {
     margin-top: -10px;
 }
 
+/* REVIEWS SECTION */
+.reviews {
+    display: flex;
+    height: fit-content;
+    padding: 50px 20px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 56px;
+    background-color: #E8DDD9;
+}
+.reviewText {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 32px;
+    background-color:  #FFF;
+}
+.firstDiv {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    width: 100%;
+    border-radius: 32px;
+    background-color:  #F7F4F2;
+    padding: 20px;
+}
+.firstDiv .profilePicture {
+    width: 121px;
+    height: 182px;
+}
+.firstDiv .profilePicture img {
+    border-radius: 100px;
+    object-fit: cover;
+}
+.firstDiv .nameDiv h2 {
+    color:  #4B3425;
+    font-family: Urbanist;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.48px;
+}
+.firstDiv .nameDiv h5 {
+    color: #926247;
+    font-family: Urbanist;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+.secondDiv {
+    align-self: stretch;
+    color:  rgba(31, 22, 15, 0.32);
+    text-align: center;
+    font-family: Urbanist;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.28px;
+}
+.secondDiv span {
+    color: #4B3425;
+}
+.thirdDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0px;
+    align-self: stretch;
+}
+.thirdDivContainer {
+    width: 80%;
+    display: flex;
+    padding: 12px;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    border-radius: 24px 24px 0px 24px;
+    background-color: #4B3425;
+}
+.thirdDivContainer p {
+    flex: 1 0 0;
+    color: #F7F4F2;
+    font-family: Urbanist;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.4px;
+}
+.thirdDivContainer>div {
+    display: flex;
+    width: 64px;
+    height: 64px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1410.286px;
+    background-color: #9BB068;
+}
+.fourthDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0px;
+    align-self: stretch;
+}
+.fourthDivContainer {
+    width: 80%;
+    display: flex;
+    padding: 12px;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    border-radius: 24px 24px 24px 0px;
+    background-color: #F7F4F2;
+}
+.fourthDivContainer p {
+    flex: 1 0 0;
+    color: rgba(31, 22, 15, 0.64);
+    font-family: Urbanist;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.4px;
+}
+.fourthDivContainer>div {
+    display: flex;
+    width: 64px;
+    height: 64px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1410.286px;
+    background-color: #FE814B;
+}
+.reviewCaption {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+.reviewCaption .quote {
+    display: flex;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 16px;
+    background-color:  #D5C2B9;
+}
+.reviewCaption p {
+    align-self: stretch;
+    color: #4B3425;
+    font-family: Urbanist;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -1.44px;
+}
+.reviewCaption .actionButtons {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+.reviewCaption .actionButtons div {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    padding: 28px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1000px;
+    background-color: #FFF;
+}
+
+*{
+    /* outline: red solid 1px; */
+}
 /* FOOTER */
 footer {
     display: flex;
@@ -1042,6 +1233,7 @@ footer .copyRights p {
         width: 10px;
         display: inline-block;
         margin-right: 10px; 
+        margin-top: -8px;
     }
     /* STATISTICS */
     .statistics {
@@ -1219,6 +1411,60 @@ footer .copyRights p {
         height: 200px;
         width: 100%;
     }
+
+    /* REVIEWS SECTION */
+    .reviews {
+        flex-direction: column-reverse;
+        height: fit-content;
+        padding: 10px;
+        gap: 30px;
+    }
+    .reviewText {
+        width: 100%;
+    }
+    .firstDiv .profilePicture {
+        width: 100px;
+        height: 100px;
+    }
+    .firstDiv .nameDiv h5 {
+        font-size: 12px;
+    }
+    .thirdDivContainer {
+        width: 100%;
+        gap: 10px;
+    }
+    .thirdDivContainer p {
+        font-size: 15px;
+    }
+    .thirdDivContainer>div {
+        width: 50px;
+        height: 50px;
+    }
+    .fourthDivContainer {
+        width: 100%;
+        gap: 10px;
+    }
+    .fourthDivContainer p {
+        font-size: 15px;
+    }
+    .fourthDivContainer>div {
+        width: 50px;
+        height: 50px;
+    }
+    .reviewCaption {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .reviewCaption p {
+        font-size: 40px;
+        text-align: center;
+    }
+    *{
+        /* outline: red solid 1px; */
+    }
+    /* FOOTER */
     footer {
         display: flex;
         width: 100%;
@@ -1243,6 +1489,7 @@ footer .copyRights p {
     footer .copyRights p {
         margin: -7px auto;
     }
+    
 }
 /* TABLETS */
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
