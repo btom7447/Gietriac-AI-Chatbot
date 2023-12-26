@@ -299,6 +299,7 @@ header {
     display: inline-block;
     margin-right: 10px; 
     margin-top: 20px;
+    fill: #926247;
 }
 #splide .splide__slide.is-active svg {
     fill: #FFF;  
